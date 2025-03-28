@@ -22,7 +22,7 @@ DanbooruおよびGelbooruにおけるタグ検索を模倣し、学習に使用�
 
 ## インストール
   ***事前にローカルの任意の場所へPure-Danbooruを用意してください***
-1. ローカルの任意の場所へこのリポジトリを`git clone https://github.com/dowarin/Pure-Danbooru-Viewer.git`
+1. ローカルの任意の場所へこのリポジトリをgit cloneしてください `git clone https://github.com/dowarin/Pure-Danbooru-Viewer.git`
 2. `Download_Parquet.bat` を実行
 3. `PureDanbooruViewer.bat` を実行
 
@@ -31,6 +31,7 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 
 ## 各画面の説明
 ### メインウィンドウ
+タグでの検索を行うメイン画面となります\
 ![Screenshot](screenshot/main_window.jpg)
 
 ### 各項目の説明
@@ -58,6 +59,7 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 - (Post ID入力欄で) Enter: 入力した値でプレビュー画面を開きます ( :mag_right: ボタンと同じ動作)
 
 #### 検索結果画面
+検索で抽出されたポストの情報を表示します\
 ![Screenshot](screenshot/result_window.jpg)
 
 ### 各項目の説明
@@ -76,6 +78,7 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 - (任意のセルを選択後) Ctrl + C: 選択されたセルの値をクリップボードにコピーします
 
 ## プレビュー画面
+検索結果画面、あるいはメイン画面から指定されたポストIDの画像とタグを表示します\
 ![Screenshot](screenshot/preview_window.jpg)
 
 ### 各項目の説明
@@ -88,6 +91,7 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 - Save Group: 現在表示されている画像群の画像とタグ情報を保存します
 
 ### タグビューワー
+タグ自体の検索を行います\
 ![Screenshot](screenshot/tag_window.jpg)
 
 ### 各項目の説明
@@ -102,6 +106,7 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 - (任意のセルを選択後) Ctrl + C: 選択されたセルの値をクリップボードにコピーします
 
 ## オプション画面
+動作に必要なパスの指定などの設定を行います\
 ![Screenshot](screenshot/option_window_ja.jpg)
 
 ### 各項目の説明
@@ -118,8 +123,8 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 - alphachannel画像を読み込まない: 各種保存やプレビュー表示の際にアルファ画像を読み込みません
 - Parquetファイルだけで動作させる: 画像の読み込みを省略し、プラグラムの動作をparquet内の文字データだけでやりくりします
 - Pure-Danbooru root: Pure-Danbooruのパスを指定してください
-- tarIndex Parquetフォルダ: tarIndex_〇〇.parquetの保存先を指定してください
-　　　　　　　　　　　　　　　`Download_Parquet.bat`を使用した場合、ベースparquetと同じ場所に格納されているはずです
+- tarIndex Parquetフォルダ: tarIndex_〇〇.parquetの保存先を指定してください\
+  `Download_Parquet.bat`を使用した場合、ベースparquetと同じ場所に格納されているはずです
 
 #### Image Dir
   tarファイルを使用しない場合のみ使用可能です\
@@ -178,6 +183,7 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 
 ## Window Descriptions
 ### Main Window
+This is the main window for searching by tags.\
 ![Screenshot](screenshot/main_window.jpg)
 
 ### Item Descriptions
@@ -204,6 +210,7 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 - (In Post ID input field) Enter: Open preview window with entered value (same as :mag_right: button)
 
 ## Search Results Window
+Displays information of posts extracted by search.\
 ![Screenshot](screenshot/result_window.jpg)
 
 ### Item Descriptions
@@ -222,6 +229,7 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 - (After selecting a cell) Ctrl + C: Copy cell value to clipboard
 
 ## Preview Window
+Displays the image and tags of the specified post ID from the search results screen or main screen.\
 ![Screenshot](screenshot/preview_window.jpg)
 
 ### Item Descriptions
@@ -234,6 +242,7 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 - Save Group: Save images and tag information of current image group
 
 ## Tag Viewer
+Performs a search for the tag itself.\
 ![Screenshot](screenshot/tag_window.jpg)
 
 ### Item Descriptions
@@ -247,6 +256,7 @@ https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 - (After selecting a cell) Ctrl + C: Copy cell value to clipboard
 
 ## Options Window
+Configure settings such as specifying the paths required for operation.\
 ![Screenshot](screenshot/option_window_en.jpg)
 
 ### Item Descriptions
