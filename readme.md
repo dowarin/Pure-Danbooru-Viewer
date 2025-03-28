@@ -15,7 +15,7 @@ DanbooruおよびGelbooruにおけるタグ検索を模倣し、学習に使用�
 ## 対応言語
 - 日本語
 - 英語(AI-translated)
-  [任意で追加可能](#language)
+- [任意で追加可能](#language)
 
 ## 動作環境
 - Python 3.x
@@ -159,7 +159,7 @@ It mimics tag search functionality in Danbooru and Gelbooru, helping to extract 
 ## Supported Languages
 - Japanese
 - English(AI-tranlated)
-  [Can be additional](#language-1)
+- [Can be additional](#language-1)
 
 ## System Requirements
 - Python 3.x
