@@ -4,7 +4,7 @@
 
 ## 概要：
 
-このプログラムはWarriorMama777氏が公開されたPure-Danbooruのデータ閲覧アプリケーションです。
+このプログラムはWarriorMama777氏が公開されたPure-Danbooruのデータ閲覧アプリケーションです。\
 DanbooruおよびGelbooruにおけるタグ検索を模倣し、学習に使用したい画像の抽出を助けます。\
 　https://huggingface.co/datasets/WarriorMama777/pure-danbooru/
 
@@ -22,7 +22,7 @@ DanbooruおよびGelbooruにおけるタグ検索を模倣し、学習に使用�
 
 ## インストール
   ***事前にローカルの任意の場所へPure-Danbooruを用意してください***
-1. ローカルの任意の場所へこのリポジトリを`git clone`
+1. ローカルの任意の場所へこのリポジトリを`git clone https://github.com/dowarin/Pure-Danbooru-Viewer.git`
 2. `Download_Parquet.bat` を実行
 3. `PureDanbooruViewer.bat` を実行
 
@@ -36,13 +36,13 @@ DanbooruおよびGelbooruにおけるタグ検索を模倣し、学習に使用�
 - Option: オプション画面を表示します
 - Lang: プログラムの言語設定を変更します
 
-## メイン画面
-- Limit Results: 検索実行時の詳細画面への表示数を制限します
-                 限界値は1,000,000件としています
+#### メイン画面
+- Limit Results: 検索実行時の詳細画面への表示数を制限します\
+  限界値は1,000,000件としています
 - Data Source: 検索対象を選択します
 - Tags Area: 画像を絞り込むためのタグを入力していきます\
-             入力欄左の×マークの押下で選択行の削除が可能です\
-             今のところワイルドカード(*)を使用したあいまい検索には対応していません
+  入力欄左の×マークの押下で選択行の削除が可能です\
+  今のところワイルドカード(*)を使用したあいまい検索には対応していません
 - Search: 現在入力されているタグ群での検索を実行し、詳細画面を開きます
 - Clear Tags: 現在入力されているタグを全て消去します
 - Tag Viewer: タグビューワーを開きます
@@ -52,7 +52,7 @@ DanbooruおよびGelbooruにおけるタグ検索を模倣し、学習に使用�
 - F1キー: オプション画面を表示します
 - Ctrl + S: config.iniに現在の設定を保存します
 - Ctrl + Enter: 現在入力されているタグ群での検索を実行し、詳細画面を開きます (Searchボタンと同じ動作)
-- (Post ID入力欄で) Enter: 入力した値でプレビュー画面を開きます (:mag_right:ボタンと同じ動作)
+- (Post ID入力欄で) Enter: 入力した値でプレビュー画面を開きます ( :mag_right: ボタンと同じ動作)
 
 #### 検索結果画面
 ![Screenshot](screenshot/result_window.jpg)
@@ -133,11 +133,11 @@ DanbooruおよびGelbooruにおけるタグ検索を模倣し、学習に使用�
 - プレビュー画面の表示、あるいはタグを保存する際の設定です
 
 ## 既知の問題
-#### `Pure-Danbooru\json`に纏められているデータに欠落が存在する
+#### - `Pure-Danbooru\json`に纏められているデータに欠落が存在する
   illustrationの付与やbad_id, highres等のメタタグ除去による違いといった話ではなく、\
   `Pure-Danbooru\metadata`から纏めるにあたって一部のタグ情報が欠落してしまっているようです。(例:ID 4260582 (Danbooru))\
   そのため、本プログラムでは`Pure-Danbooru\metadata`から生成したタグ情報を利用しています。\
-  もしそちらのデータで利用したいという場合、\
+  もし`Pure-Danbooru\json`のデータで利用したいという場合は、\
   Huggingfaceに`Dan_rels_BigJSON.parquet`と`Dan_tags_BigJSON.parquet`を置いてありますので適宜差し替えてご利用ください。
 
 ## ライセンス
@@ -150,7 +150,7 @@ DanbooruおよびGelbooruにおけるタグ検索を模倣し、学習に使用�
 
 This program is a data viewing application for Pure-Danbooru, published by WarriorMama777.\
 It mimics tag search functionality in Danbooru and Gelbooru, helping to extract images for learning purposes.\
-  https://huggingface.co/datasets/WarriorMama777/pure-danbooru/
+　https://huggingface.co/datasets/WarriorMama777/pure-danbooru/
 
 ## Screenshots
 
@@ -166,7 +166,7 @@ It mimics tag search functionality in Danbooru and Gelbooru, helping to extract 
 
 ## Installation
   ***Please prepare Pure-Danbooru in a local directory in advance***
-1. Clone this repository to a local directory using `git clone`
+1. Clone this repository to a local directory using `git clone https://github.com/dowarin/Pure-Danbooru-Viewer.git`
 2. Execute `Download_Parquet.bat`
 3. Execute `PureDanbooruViewer.bat`
 
@@ -180,13 +180,12 @@ It mimics tag search functionality in Danbooru and Gelbooru, helping to extract 
 - Option: Displays the options window
 - Lang: Changes the program language settings
 
-## Main Window
+#### Main Window
 - Limit Results: Limits the number of items displayed in the details window when searching. Maximum limit is 1,000,000 items.
 - Data Source: Select the search target
 - Tags Area: Enter tags to filter images\
              The × mark on the left side of the input field can delete the selected line\
              Currently does not support wildcard (*) fuzzy searches
-
 - Search: Execute search with current tag group and open the details window
 - Clear Tags: Clears all currently entered tags
 - Tag Viewer: Opens the tag viewer
@@ -280,7 +279,7 @@ It mimics tag search functionality in Danbooru and Gelbooru, helping to extract 
   This is not about differences due to `illustration` addition or removal of meta tags like `bad_id`, `highres`, etc.\
   It seems some tag information is missing when compiling from `Pure-Danbooru\metadata`(e.g., ID 4260582 (Danbooru))\
   Therefore, this program uses tag information generated from `Pure-Danbooru\metadata`\
-  If you want to use that data, \
+  If you want to use `Pure-Danbooru\json` data, \
   `Dan_rels_BigJSON.parquet` and `Dan_tags_BigJSON.parquet` are available on Huggingface, so please replace them as needed.
 
 ## License
