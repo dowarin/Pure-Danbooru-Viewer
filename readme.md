@@ -22,7 +22,8 @@ DanbooruおよびGelbooruにおけるタグ検索を模倣し、学習に使用�
 
 ## インストール
   ***事前にローカルの任意の場所へPure-Danbooruを用意してください***
-1. ローカルの任意の場所へこのリポジトリをgit cloneしてください `git clone https://github.com/dowarin/Pure-Danbooru-Viewer.git`
+1. ローカルの任意の場所へこのリポジトリをgit cloneしてください\
+   `git clone https://github.com/dowarin/Pure-Danbooru-Viewer.git`
 2. `Download_Parquet.bat` を実行
 3. `PureDanbooruViewer.bat` を実行
 
@@ -174,7 +175,8 @@ It mimics tag search functionality in Danbooru and Gelbooru, helping to extract 
 
 ## Installation
   ***Please prepare Pure-Danbooru in a local directory in advance***
-1. Clone this repository to a local directory using `git clone https://github.com/dowarin/Pure-Danbooru-Viewer.git`
+1. Clone this repository to a local directory\
+   using `git clone https://github.com/dowarin/Pure-Danbooru-Viewer.git`
 2. Execute `Download_Parquet.bat`
 3. Execute `PureDanbooruViewer.bat`
 
