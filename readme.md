@@ -26,6 +26,9 @@ DanbooruおよびGelbooruにおけるタグ検索を模倣し、学習に使用�
 2. `Download_Parquet.bat` を実行
 3. `PureDanbooruViewer.bat` を実行
 
+Download_Parquet.batでダウンロードするParquetファイルはHuggingFaceに置いてあります\
+https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
+
 ## 各画面の説明
 ### メインウィンドウ
 ![Screenshot](screenshot/main_window.jpg)
@@ -169,6 +172,9 @@ It mimics tag search functionality in Danbooru and Gelbooru, helping to extract 
 1. Clone this repository to a local directory using `git clone https://github.com/dowarin/Pure-Danbooru-Viewer.git`
 2. Execute `Download_Parquet.bat`
 3. Execute `PureDanbooruViewer.bat`
+
+The Parquet files downloaded with Download_Parquet.bat are stored on HuggingFace.
+https://huggingface.co/datasets/dowarin/Pure-Danbooru-Viewer-Parquet
 
 ## Window Descriptions
 ### Main Window
